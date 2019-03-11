@@ -7,11 +7,11 @@ title = "Flask Forms"
 def index():
     return render_template('home.html', title=title)
 
-@app.route('signup')
+@app.route('/signup')
 def signup():
     return render_template('signup.html', title=title)
 
-@app.route('thankyou')
+@app.route('/thankyou')
 def thankyou():
     return render_template('thankyou.html', title=title)
 
