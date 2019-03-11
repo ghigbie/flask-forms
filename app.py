@@ -13,7 +13,9 @@ def signup():
 
 @app.route('/thankyou')
 def thankyou():
-    return render_template('thankyou.html', title=title)
+    first = request.args.get('first')
+    last = request.args.get('last')
+    return render_template('thankyou.html', title=title, first=first, last=last)
 
 @app.route('/about')
 def about():
